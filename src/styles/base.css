@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 48px; }
+  @media (max-width: 1000px) {
+    .container {
+      padding: 0 24px; } }
+
+.bg-top {
+  position: absolute;
+  right: 0;
+  right: 0px;
+  z-index: -99999; }
+
+.bg-bottom {
+  position: absolute;
+  left: 0;
+  z-index: -99999;
+  bottom: -110px; }
+  @media (max-width: 1000px) {
+    .bg-bottom {
+      display: none; } }
+
+.pricing {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 56px; }
+  @media (max-width: 1000px) {
+    .pricing {
+      width: 100%;
+      padding: 56px 16px; } }
+  .pricing h1 {
+    text-align: center;
+    margin-bottom: 38px; }
+  .pricing .pricing-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 1000px) {
+      .pricing .pricing-plan {
+        margin-bottom: 24px; } }
+    .pricing .pricing-plan .toggle {
+      background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+      border-radius: 16px;
+      height: 32px;
+      width: 56px;
+      margin: 0 24px;
+      position: relative; }
+      @media (max-width: 1000px) {
+        .pricing .pricing-plan .toggle {
+          margin: 0 16px; } }
+      .pricing .pricing-plan .toggle input[type="checkbox"] {
+        display: none;
+        transition: all 0.3s ease-in; }
+        .pricing .pricing-plan .toggle input[type="checkbox"]:checked + .toggle-btn {
+          transform: translate(29px); }
+      .pricing .pricing-plan .toggle .toggle-btn {
+        background-color: #FFF;
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: 3px;
+        left: 2px;
+        transition: all 0.2s ease-in; }
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 1080px) {
+    .pricing-container {
+      flex-direction: column; } }
+
+.attribution {
+  padding: 48px 0;
+  text-align: center; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #F7F7FE;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  height: 100vh; }
+
+main {
+  position: relative; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.btn {
+  border: none;
+  outline: none;
+  height: 44px;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer; }
+
+.btn-primary {
+  background-image: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+  color: #FFFFFF;
+  letter-spacing: 1.39px;
+  text-align: center;
+  transition: all 0.3s ease-in; }
+  .btn-primary:hover {
+    border: 1px solid #6D72DE;
+    background-image: none;
+    background-color: #FFF;
+    color: #6D72DE;
+    font-weight: bold; }
+
+.btn-secondary {
+  background: #FFFFFF;
+  color: #6D72DE;
+  letter-spacing: 1.39px;
+  text-align: center; }
+  .btn-secondary:hover {
+    background-color: #6D72DE;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-weight: bold; }
+
+.pricing-panel {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 32px;
+  background-color: #FFF;
+  min-width: 350px; }
+  @media (max-width: 1080px) {
+    .pricing-panel {
+      margin-bottom: 32px;
+      max-width: 350px; } }
+  .pricing-panel p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 24px; }
+  .pricing-panel h2 {
+    font-size: 72px;
+    margin-bottom: 32px;
+    text-align: center; }
+    @media (max-width: 576px) {
+      .pricing-panel h2 {
+        font-size: 54px; } }
+  .pricing-panel .pricing-row div {
+    border-bottom: 1px solid #979797;
+    text-align: center;
+    padding: 12px 0; }
+    .pricing-panel .pricing-row div:first-child {
+      border-top: 1px solid #979797; }
+    .pricing-panel .pricing-row div:last-child {
+      margin-bottom: 32px; }
+  .pricing-panel .annually {
+    display: none;
+    opacity: 0; }
+    .pricing-panel .annually.active {
+      opacity: 1;
+      display: block; }
+  .pricing-panel .monthly {
+    opacity: 0;
+    display: none; }
+    .pricing-panel .monthly.active {
+      opacity: 1;
+      display: block; }
+
+.panel-pro {
+  background-image: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+  color: white;
+  padding: 64px 32px;
+  z-index: 100; }
+  .panel-pro .pricing-row div {
+    border-bottom: 1px solid #FFF; }
+    .panel-pro .pricing-row div:first-child {
+      border-top: 1px solid #FFF; }
+    .panel-pro .pricing-row div:last-child {
+      margin-bottom: 32px; }

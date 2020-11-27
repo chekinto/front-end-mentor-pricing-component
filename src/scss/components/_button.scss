@@ -1,0 +1,38 @@
+.btn {
+  border: none;
+  outline: none;
+  height: 44px;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-image: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+  color: #FFFFFF;
+  letter-spacing: 1.39px;
+  text-align: center;
+  transition: all 0.3s ease-in;
+  &:hover {
+    border: 1px solid #6D72DE;
+    background-image:none;
+    background-color: #FFF;
+    color:  #6D72DE;
+    font-weight: bold;
+  }
+}
+
+.btn-secondary {
+  background: #FFFFFF;
+  color: #6D72DE;
+  letter-spacing: 1.39px;
+  text-align: center;
+  &:hover {
+    background-color:#6D72DE;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-weight: bold;
+  }
+}

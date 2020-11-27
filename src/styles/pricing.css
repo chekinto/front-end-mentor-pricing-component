@@ -1,0 +1,54 @@
+.pricing {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 56px; }
+  @media (max-width: 1000px) {
+    .pricing {
+      width: 100%;
+      padding: 56px 16px; } }
+  .pricing h1 {
+    text-align: center;
+    margin-bottom: 38px; }
+  .pricing .pricing-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 1000px) {
+      .pricing .pricing-plan {
+        margin-bottom: 24px; } }
+    .pricing .pricing-plan .toggle {
+      background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+      border-radius: 16px;
+      height: 32px;
+      width: 56px;
+      margin: 0 24px;
+      position: relative; }
+      @media (max-width: 1000px) {
+        .pricing .pricing-plan .toggle {
+          margin: 0 16px; } }
+      .pricing .pricing-plan .toggle input[type="checkbox"] {
+        display: none;
+        transition: all 0.3s ease-in; }
+        .pricing .pricing-plan .toggle input[type="checkbox"]:checked + .toggle-btn {
+          transform: translate(29px); }
+      .pricing .pricing-plan .toggle .toggle-btn {
+        background-color: #FFF;
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: 3px;
+        left: 2px;
+        transition: all 0.2s ease-in; }
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 1080px) {
+    .pricing-container {
+      flex-direction: column; } }
+
+.attribution {
+  padding: 48px 0;
+  text-align: center; }

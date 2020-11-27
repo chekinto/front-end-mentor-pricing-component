@@ -1,0 +1,22 @@
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 48px; }
+  @media (max-width: 1000px) {
+    .container {
+      padding: 0 24px; } }
+
+.bg-top {
+  position: absolute;
+  right: 0;
+  right: 0px;
+  z-index: -99999; }
+
+.bg-bottom {
+  position: absolute;
+  left: 0;
+  z-index: -99999;
+  bottom: -110px; }
+  @media (max-width: 1000px) {
+    .bg-bottom {
+      display: none; } }

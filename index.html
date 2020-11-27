@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/styles/base.css">
+  <title>Frontend Mentor | Pricing Component with toggle</title>
+</head>
+<body>
+  <main>
+    <img class="bg-top" src="./images/bg-top.svg" alt="top background image">
+    <div class="container">
+      <div class="pricing">
+        <h1>Our Pricing</h1>
+        <div class="pricing-plan">
+          <span>Annually</span>
+          <label for="toggle" class="toggle">
+            <input type="checkbox" id="toggle">
+            <span class="toggle-btn"></span>
+          </label>
+          <span>Monthly</span>
+        </div>
+      </div>
+
+      <div class="pricing-container">
+        <div class="pricing-panel">
+          <p>Basic</p>
+          <h2 class="annually active">&dollar;199.99</h2>
+          <h2 class="monthly">&dollar;19.99</h2>
+          <div class="pricing-row">
+            <div>500 GB Storage</div>
+            <div>2 Users Allowed</div>
+            <div>Send up to 3 GB</div>
+          </div>
+          <button class="btn btn-primary">Learn More</button>
+        </div>
+  
+        <div class="pricing-panel panel-pro">
+          <p>Professional</p>
+          <h2 class="annually active">&dollar;249.99</h2>
+          <h2 class="monthly">&dollar;24.99</h2>
+          <div class="pricing-row">
+            <div>1 TB Storage</div>
+            <div>5 Users Allowed</div>
+            <div>Send up to 10 GB</div>
+          </div>
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+  
+        <div class="pricing-panel">
+          <p>Master</p>
+          <h2 class="annually active">&dollar;399.99</h2>
+          <h2 class="monthly">&dollar;39.99</h2>
+          <div class="pricing-row">
+            <div>2 TB Storage</div>
+            <div>10 Users Allowed</div>
+            <div>Send up to 20 GB</div>
+          </div>
+          <button class="btn btn-primary">Learn More</button>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Che To</a>.
+      </div>
+    </div>
+    <img class="bg-bottom" src="./images/bg-bottom.svg" alt="top background image">
+  </main>
+  
+  <script src="./js/index.js"></script>
+</body>
+</html>
